@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: podinfod
-        image: ghcr.io/stefanprodan/podinfo:5.2.0
+        image: ghcr.io/stefanprodan/podinfo:5.2.1
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
@@ -46,7 +46,7 @@ spec:
         - --random-error=false
         env:
         - name: PODINFO_UI_COLOR
-          value: "#34577b"
+          value: "#333333"
         livenessProbe:
           exec:
             command:
